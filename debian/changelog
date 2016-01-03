@@ -1,0 +1,5 @@
+generic-mqtt-client (0.1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Erkki Seppala <flux@aiee.mf>  Sun, 03 Jan 2016 21:13:25 +0200

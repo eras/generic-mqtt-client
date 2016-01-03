@@ -1,0 +1,12 @@
+[Unit]
+Description=Generic MQTT client for %i
+
+[Service]
+User=nemo
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/100000/dbus/user_bus_socket
+ExecStart=/usr/bin/python2.7 -u /usr/bin/generic-mqtt-client.py /home/nemo/.config/generic-mqtt-client.%i.conf
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=post-user-session.target
